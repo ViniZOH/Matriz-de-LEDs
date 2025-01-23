@@ -1,0 +1,1 @@
+//Vão ser declarados os frames e cores da animação2
