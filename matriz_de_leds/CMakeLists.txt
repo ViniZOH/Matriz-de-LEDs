@@ -28,38 +28,41 @@ set(PICO_BOARD pico_w CACHE STRING "Board type")
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
 
-project(matriz-de-leds C CXX ASM)
+project(matriz_de_leds C CXX ASM)
 
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(matriz-de-leds matriz-de-leds.c )
+add_executable(matriz_de_leds matriz_de_leds.c )
 
-pico_set_program_name(matriz-de-leds "matriz-de-leds")
-pico_set_program_version(matriz-de-leds "0.1")
+pico_set_program_name(matriz_de_leds "matriz_de_leds")
+pico_set_program_version(matriz_de_leds "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
-pico_enable_stdio_uart(matriz-de-leds 1)
-pico_enable_stdio_usb(matriz-de-leds 1)
+pico_enable_stdio_uart(matriz_de_leds 1)
+pico_enable_stdio_usb(matriz_de_leds 1)
 
 #Generate PIO Header
-pico_generate_pio_header(matriz-de-leds ${CMAKE_CURRENT_LIST_DIR}/matriz-de-leds.pio)
+pico_generate_pio_header(matriz_de_leds ${CMAKE_CURRENT_LIST_DIR}/matriz_de_leds.pio)
 
 # Add the standard library to the build
-target_link_libraries(matriz-de-leds
-        pico_stdlib)
+target_link_libraries(matriz_de_leds
+        pico_stdlib
+        hardware_pio
+        hardware_adc
+        pico_bootrom)
 
 # Add the standard include files to the build
-target_include_directories(matriz-de-leds PRIVATE
-  ${CMAKE_CURRENT_LIST_DIR}
+target_include_directories(matriz_de_leds PRIVATE
+        ${CMAKE_CURRENT_LIST_DIR}
 )
 
 # Add any user requested libraries
-target_link_libraries(matriz-de-leds 
+target_link_libraries(matriz_de_leds 
         
         )
 
-pico_add_extra_outputs(matriz-de-leds)
+pico_add_extra_outputs(matriz_de_leds)
 

@@ -1,4 +1,4 @@
-.program matriz-de-leds
+.program matriz_de_leds
 
 .wrap_target
     out x, 1
@@ -15,9 +15,9 @@ cont:
 
 
 % c-sdk {
-static inline void matriz-de-leds_program_init(PIO pio, uint sm, uint offset, uint pin)
+static inline void matriz_de_leds_program_init(PIO pio, uint sm, uint offset, uint pin)
 {
-    pio_sm_config c = matriz-de-leds_program_get_default_config(offset);
+    pio_sm_config c = matriz_de_leds_program_get_default_config(offset);
 
     // Set pin to be part of set output group, i.e. set by set instruction
     sm_config_set_set_pins(&c, pin, 1);
