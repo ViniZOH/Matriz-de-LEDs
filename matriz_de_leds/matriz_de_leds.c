@@ -20,6 +20,7 @@ chamar a rotina que lê o teclado e montar  o switch case com as ações corresp
 #include "bibliotecas/anim4.h"
 #include "bibliotecas/anim5.h"
 #include "bibliotecas/anim6.h"
+#include "bibliotecas/pitches.h"
 #include "bibliotecas/control_keyboard.h"
 #include "bibliotecas/control_leds.h"
 
@@ -39,7 +40,10 @@ int main()
 
     // Inicializa todos os códigos stdio padrão que estão ligados ao binário.
     stdio_init_all();
-
+  
+    // Inicializa o buzzer
+    buzzer_init();
+  
     printf("iniciando a transmissão PIO");
     if (ok) printf("clock set to %ld\n", clock_get_hz(clk_sys));
 
@@ -51,7 +55,6 @@ int main()
 
     // Inicializa o teclado matricial
     init_keyboard();
-
 
     while (true) {
 
