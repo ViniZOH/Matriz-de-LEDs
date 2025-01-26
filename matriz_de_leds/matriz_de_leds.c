@@ -66,6 +66,11 @@ int main()
         play_anim1(pio,sm,valor_led);
         break;
 
+        case '2':
+            //rotina para escrever na matriz de leds com o emprego de PIO - desenho 6
+        play_anim2(pio,sm,valor_led);
+        break;
+
         case '6':
             //rotina para escrever na matriz de leds com o emprego de PIO - desenho 6
         play_anim6(pio,sm,valor_led);
