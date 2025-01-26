@@ -43,7 +43,13 @@ double all_green[25] =      {0.5, 0.5, 0.5, 0.5, 0.5,
                             0.5, 0.5, 0.5, 0.5, 0.5,
                             0.5, 0.5, 0.5, 0.5, 0.5,
                             0.5, 0.5, 0.5, 0.5, 0.5,
-                            0.5, 0.5, 0.5, 0.5, 0.5}; // 80% de intensidade para o vermelho                                                       
+                            0.5, 0.5, 0.5, 0.5, 0.5}; // 80% de intensidade para o vermelho
+
+double all_white[25] =      {0.2, 0.2, 0.2, 0.2, 0.2,
+                            0.2, 0.2, 0.2, 0.2, 0.2,
+                            0.2, 0.2, 0.2, 0.2, 0.2,
+                            0.2, 0.2, 0.2, 0.2, 0.2,
+                            0.2, 0.2, 0.2, 0.2, 0.2};// 20% de intensidade para o branco
 
 // Define um frame para apagar todos os LEDs
 uint all_off_frame[25] = {0, 0, 0, 0, 0,
@@ -82,4 +88,11 @@ void ligar_leds_azul(PIO pio, uint sm, uint32_t valor_led) {
     put_leds(all_on_frame,no_red,all_green, no_blue, valor_led, pio, sm);
     printf("LEDs ligados na cor Verde 50%%\n");
 }
+
+//Função para ligar todos os LEDs na cor verde 20%
+void ligar_leds_branco20(PIO pio, uint sm, uint32_t valor_led){
+    put_leds(all_on_frame,all_white,all_white, all_white, valor_led, pio, sm);
+    printf("LEDs ligados na cor Branco 20%%\n");
+}
+
 #endif // SPECIAL_ACTIONS_H

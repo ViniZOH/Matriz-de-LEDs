@@ -26,6 +26,8 @@ chamar a rotina que lê o teclado e montar  o switch case com as ações corresp
 
 #define OUT_PIN 7 // Pino onde a matriz esta conectada
 
+#define BUTTON 5
+
 //Função principal
 int main()
 {
@@ -55,6 +57,11 @@ int main()
 
     // Inicializa o teclado matricial
     init_keyboard();
+
+
+    gpio_init(BUTTON);
+    gpio_set_dir(BUTTON,GPIO_IN);
+    gpio_pull_up(BUTTON);
 
     while (true) {
         
@@ -112,7 +119,10 @@ int main()
         ligar_leds_verde50(pio,sm,valor_led);
         break;
 
-    
+        case '#':
+            //rotina para Ligar em verde 50%
+        ligar_leds_branco20(pio,sm,valor_led);
+        break;
     }
     
     }
