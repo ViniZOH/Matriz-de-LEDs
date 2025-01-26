@@ -3,15 +3,15 @@
 #ifndef CONTROL_KEYBOARD_H
 #define CONTROL_KEYBOARD_H
 
-#define ROW1 18  // R1 -> GP8
-#define ROW2 19  // R2 -> GP7
-#define ROW3 20  // R3 -> GP6
-#define ROW4 4  // R4 -> GP5
+#define ROW1 18  // R1 -> GP18
+#define ROW2 19  // R2 -> GP19
+#define ROW3 20  // R3 -> GP20
+#define ROW4 4  // R4 -> GP4
 
-#define COL1 9    // C1 -> GP4
-#define COL2 8   // C2 -> GP3
-#define COL3 16   // C3 -> GP2
-#define COL4 17  // C4 --> GP0
+#define COL1 9    // C1 -> GP8
+#define COL2 8   // C2 -> GP16
+#define COL3 16   // C3 -> GP9
+#define COL4 17  // C4 --> GP17
 
 
 const char keymap[4][4] = {
@@ -77,5 +77,6 @@ char ler_teclado() {
 
     return '\0'; // Retorna vazio se nenhuma tecla for pressionada
 }
+
 
 #endif

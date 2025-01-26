@@ -88,6 +88,8 @@ int main()
         ligar_leds_verde50(pio,sm,valor_led);
         break;
 
+       // default: ligar_leds_azul(pio,sm,valor_led);
+
     sleep_ms(500);
     printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));
     }
