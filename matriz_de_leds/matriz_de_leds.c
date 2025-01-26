@@ -57,8 +57,9 @@ int main()
     init_keyboard();
 
     while (true) {
-
+        
         tecla = ler_teclado();
+        if(tecla != '\0') {
 
     switch (tecla)  {
         case '1':
@@ -101,10 +102,14 @@ int main()
         ligar_leds_verde50(pio,sm,valor_led);
         break;
 
-    sleep_ms(500);
-    printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));
+    
     }
     
-} 
+    }
+    sleep_ms(300);
+    //printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));
+    
+}
+    return 0;
 }
 
