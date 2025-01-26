@@ -86,6 +86,6 @@ void play_anim3(PIO pio,uint sm,uint32_t valor_led) {
     sleep_ms(1000);
 
     play_grito(); // Grito final
-}
 
+}
 #endif // ANIM3_H
