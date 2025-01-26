@@ -54,15 +54,14 @@ uint anim4_f5[25] = {0, 1, 1, 1, 0,
 // Função para rodar a animação
 void play_anim4(PIO pio, uint sm, uint32_t valor_led) {
     put_leds(anim4_f1, anim4_red, anim4_green, anim4_blue, valor_led, pio, sm);
-    sleep_ms(200); // Pausa de 200ms entre os frames
+    sleep_ms(500); // Pausa de 200ms entre os frames
     put_leds(anim4_f2, anim4_red, anim4_green, anim4_blue, valor_led, pio, sm);
     sleep_ms(200);
     put_leds(anim4_f3, anim4_red, anim4_green, anim4_blue, valor_led, pio, sm);
-    sleep_ms(200);
+    sleep_ms(500);
     put_leds(anim4_f4, anim4_red, anim4_green, anim4_blue, valor_led, pio, sm);
     sleep_ms(200);
     put_leds(anim4_f5, anim4_red, anim4_green, anim4_blue, valor_led, pio, sm);
-    sleep_ms(200);
+    sleep_ms(500);
 }
-
 #endif // ANIM4_H
