@@ -82,6 +82,11 @@ int main()
         play_anim4(pio,sm,valor_led); // animação 4 - função de execução
         break;
 
+        case '5':
+            //rotina para escrever na matriz de leds com o emprego de PIO - desenho 5
+        animacao_coracao_pulsando(pio, sm, valor_led);
+        break;
+
         case '6':
             //rotina para escrever na matriz de leds com o emprego de PIO - desenho 6
         play_anim6(pio,sm,valor_led);
@@ -117,4 +122,3 @@ int main()
 }
     return 0;
 }
-
