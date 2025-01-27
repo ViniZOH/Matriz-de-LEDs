@@ -68,67 +68,72 @@ int main()
         tecla = ler_teclado();
         if(tecla != '\0') {
 
-    switch (tecla)  {
-        case '1':
-            //rotina para escrever na matriz de leds com o emprego de PIO - desenho 1
-        play_anim1(pio,sm,valor_led);
-        break;
-        
-        case '2':
-            //rotina para escrever na matriz de leds com o emprego de PIO - desenho 6
-        play_anim2(pio,sm,valor_led);
-        break;
-        
-        case '3':
-            //rotina para escrever na matriz de leds com o emprego de PIO - desenho 3 
-        play_anim3(pio,sm,valor_led); // animação 3 - função de execução
-        break;
-        
-        case '4':
-            //rotina para escrever na matriz de leds com o emprego de PIO - desenho 4 
-        play_anim4(pio,sm,valor_led); // animação 4 - função de execução
-        break;
+            switch (tecla)  {
+            case '1':
+                //rotina para escrever na matriz de leds com o emprego de PIO - desenho 1
+            play_anim1(pio,sm,valor_led);
+            break;
+            
+            case '2':
+                //rotina para escrever na matriz de leds com o emprego de PIO - desenho 2
+            play_anim2(pio,sm,valor_led);
+            break;
+            
+            case '3':
+                //rotina para escrever na matriz de leds com o emprego de PIO - desenho 3 
+            play_anim3(pio,sm,valor_led); // animação 3 - função de execução
+            break;
+            
+            case '4':
+                //rotina para escrever na matriz de leds com o emprego de PIO - desenho 4 
+            play_anim4(pio,sm,valor_led); // animação 4 - função de execução
+            break;
 
-        case '5':
-            //rotina para escrever na matriz de leds com o emprego de PIO - desenho 5
-        animacao_coracao_pulsando(pio, sm, valor_led);
-        break;
+            case '5':
+                //rotina para escrever na matriz de leds com o emprego de PIO - desenho 5
+            animacao_coracao_pulsando(pio, sm, valor_led);
+            break;
 
-        case '6':
-            //rotina para escrever na matriz de leds com o emprego de PIO - desenho 6
-        play_anim6(pio,sm,valor_led);
-        break;
+            case '6':
+                //rotina para escrever na matriz de leds com o emprego de PIO - desenho 6
+            play_anim6(pio,sm,valor_led);
+            break;
 
-        case 'A':
-            //rotina para DESLIGAR TODOS OS LEDS
-        apagar_leds(pio,sm,valor_led);
-        break;
+            case 'A':
+                //rotina para DESLIGAR TODOS OS LEDS
+            apagar_leds(pio,sm,valor_led);
+            break;
 
-        case 'B':
-            //rotina para Ligar em Azul 100%
-        ligar_leds_azul(pio,sm,valor_led);
-        break;
+            case 'B':
+                //rotina para Ligar em Azul 100%
+            ligar_leds_azul(pio,sm,valor_led);
+            break;
 
-        case 'C':
-            //rotina para Ligar em vermelho 80%
-        ligar_leds_vermelho80(pio,sm,valor_led);
-        break;
+            case 'C':
+                //rotina para Ligar em vermelho 80%
+            ligar_leds_vermelho80(pio,sm,valor_led);
+            break;
 
-        case 'D':
-            //rotina para Ligar em verde 50%
-        ligar_leds_verde50(pio,sm,valor_led);
-        break;
+            case 'D':
+                //rotina para Ligar em verde 50%
+            ligar_leds_verde50(pio,sm,valor_led);
+            break;
 
-        case '#':
-            //rotina para Ligar em verde 50%
-        ligar_leds_branco20(pio,sm,valor_led);
-        break;
-    }
-    
-    }
+            case '#':
+                //rotina para Ligar em verde 50%
+            ligar_leds_branco20(pio,sm,valor_led);
+            break;
+
+            case '*':
+                //rotina para por placa em modo bootloader
+            reset_usb_boot(0, 0);
+            break;
+
+            }
+        }
     sleep_ms(300);
-    //printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));
-    
-}
+    printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));  
+    }
+
     return 0;
 }
