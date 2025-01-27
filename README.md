@@ -108,11 +108,11 @@ Este projeto foi uma experiência incrível para explorar o potencial do Raspber
 
 [link]  
 
+
+
 ──────────────────────────────────────────────────────────────────────  
                            TAREFA EMBARCATECH  
                 GERAÇÃO DE ANIMAÇÕES EM UMA MATRIZ DE LEDs 5X5   
                                 Subgrupo 6  
 ──────────────────────────────────────────────────────────────────────  
-
-
 
