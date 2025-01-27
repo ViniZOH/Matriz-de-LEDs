@@ -1,6 +1,5 @@
 Geração de Animações em uma Matriz de LEDs 5x5 com Raspberry Pi Pico W
-Este projeto é uma simulação desenvolvida no Wokwi, utilizando o microcontrolador Raspberry Pi Pico W, 
-um teclado matricial 4x4, uma matriz de LEDs coloridos 5x5 WS2812, e, opcionalmente, um buzzer passivo eletromagnético.
+Este projeto é uma simulação desenvolvida no Wokwi, utilizando o microcontrolador Raspberry Pi Pico W, um teclado matricial 4x4, uma matriz de LEDs coloridos 5x5 WS2812, e, opcionalmente, um buzzer passivo eletromagnético.
 
 O objetivo do projeto é gerar animações visuais na matriz de LEDs, controladas pelas teclas do teclado matricial, conforme os requisitos descritos abaixo.
 
