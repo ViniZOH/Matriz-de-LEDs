@@ -1,5 +1,5 @@
 # PROJETO - GERAÇÃO DE ANIMAÇÕES EM UMA MATRIZ DE LEDs 5x5  
-(SUB GRUPO 6 - ATIVIDADE 2)  
+(SUB GRUPO 6 - ATIVIDADE DA AULA SÍNCRONA 20/01)  
 **Equipe do Projeto:**  
 
 ──────────────────────────────────────────────────────────────────────  
