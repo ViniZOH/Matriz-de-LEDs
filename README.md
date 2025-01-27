@@ -20,7 +20,7 @@ Tecla #: Liga todos os LEDs na cor branca (20% de luminosidade).
 **Tecla ***: Habilita o modo de gravação via software (reboot do microcontrolador).
 
 🔧 Configuração e Execução
-1. Clone o repositorio:
+1. Clone o repositorio: https://github.com/ViniZOH/Matriz-de-LEDs.git
 2. Abra o arquivo no VS Code e carregue o dódigo no simularo Wokwi.
    
 🖼️ Demonstração
