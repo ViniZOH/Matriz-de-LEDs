@@ -1,7 +1,8 @@
 //Biblioteca para inicializar e com rptinas para controlar o teclado matricial
-
 #ifndef CONTROL_KEYBOARD_H
 #define CONTROL_KEYBOARD_H
+#include "pico/stdlib.h"
+#include "hardware/watchdog.h"
 
 const int row_pins[4] = {18, 19, 20, 4};
 const int col_pins[4] = {9, 8, 16, 17};
@@ -12,6 +13,24 @@ const char keymap[4][4] = {
     {'7', '8', '9', 'C'},
     {'*', '0', '#', 'D'}
 };
+
+
+// Função para reiniciar o microcontrolador
+void reiniciar_microcontrolador() {
+    printf("Reiniciando o microcontrolador...\n");
+    sleep_ms(1000); // Aguarda 1 segundo
+    watchdog_reboot(0, 0, 0); // Reinicia o microcontrolador
+}
+
+// Função para o modo de gravação
+void reset_usb_boot() {
+    printf("Modo de gravação ativado. Aguardando novas animações...\n");
+    // Aqui você pode adicionar a lógica para gravar novas animações
+    // Exemplo: ler uma sequência de LEDs e salvar na memória
+    sleep_ms(2000); // Simula o tempo de gravação
+    printf("Gravação concluída. Reiniciando...\n");
+    reiniciar_microcontrolador();
+}
 
 // Inicializa os pinos do teclado matricial
 void init_keyboard() {

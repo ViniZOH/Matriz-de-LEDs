@@ -20,6 +20,9 @@ chamar a rotina que lê o teclado e montar  o switch case com as ações corresp
 #include "bibliotecas/anim4.h"
 #include "bibliotecas/anim5.h"
 #include "bibliotecas/anim6.h"
+#include "bibliotecas/anim7.h"
+#include "bibliotecas/anim8.h"
+#include "bibliotecas/anim9.h"
 #include "bibliotecas/pitches.h"
 #include "bibliotecas/control_keyboard.h"
 #include "bibliotecas/control_leds.h"
@@ -99,6 +102,21 @@ int main()
             play_anim6(pio,sm,valor_led);
             break;
 
+             case '7':
+                //rotina para escrever na matriz de leds com o emprego de PIO - desenho Circulo
+            play_anim7(pio,sm,valor_led);
+            break;
+
+            case '8':
+                //rotina para escrever na matriz de leds com o emprego de PIO - desenho Lua
+            play_anim8(pio,sm,valor_led);
+            break;
+
+            case '9':
+                //rotina para escrever na matriz de leds com o emprego de PIO - formas geometricas basicas
+            play_anim9(pio,sm,valor_led);
+            break;
+
             case 'A':
                 //rotina para DESLIGAR TODOS OS LEDS
             apagar_leds(pio,sm,valor_led);
@@ -125,14 +143,14 @@ int main()
             break;
 
             case '*':
-                //rotina para por placa em modo bootloader
-            reset_usb_boot(0, 0);
+            //rotina para por placa em modo bootloader
+            reset_usb_boot();
             break;
 
             }
         }
     sleep_ms(300);
-    printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));  
+   // printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));  
     }
 
     return 0;
