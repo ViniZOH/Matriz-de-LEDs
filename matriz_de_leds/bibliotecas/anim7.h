@@ -66,6 +66,7 @@ uint circle_f7[25] = {0, 0, 0, 0, 0,
 
 // Função para executar a animação
 void play_anim7(PIO pio, uint sm, uint32_t valor_led) {
+    printf("Animação 7 - Explosão losango.\n");
     uint *frames[] = {circle_f1, circle_f2, circle_f3, circle_f4, circle_f5, circle_f6, circle_f7};
     double *colors_red[] = {anim7_red, anim7_red, anim7_red, anim7_red, anim7_red, anim7_red, anim7_red};
     double *colors_green[] = {anim7_green, anim7_green, anim7_green, anim7_green, anim7_green, anim7_green, anim7_green};

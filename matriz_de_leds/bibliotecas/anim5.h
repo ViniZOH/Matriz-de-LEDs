@@ -3,6 +3,7 @@
 #include "control_leds.h"
 
 void animacao_coracao_pulsando(PIO pio, uint sm, uint32_t valor_led) {
+    printf("Animação 5 - Coração Pulsando.\n");
     double frames[3][25] = {
         {0.0, 1.0, 0.0, 1.0, 0.0,  // Frame 1: Coração pequeno
          1.0, 1.0, 1.0, 1.0, 1.0,

@@ -63,6 +63,7 @@ uint anim6_f5[25] = {0, 0, 1, 0, 0,
                                         
 // Rodar animação:
 void play_anim6(PIO pio,uint sm,uint32_t valor_led){
+    printf("Animação 6 - \"Olhe pra cima\".\n");
     put_leds(anim6_f1,anim6_red,anim6_green,anim6_blue,valor_led,pio,sm);
     sleep_ms(1000);
     put_leds(anim6_f2,anim6_red,anim6_green,anim6_blue,valor_led,pio,sm);

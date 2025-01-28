@@ -25,41 +25,42 @@ double anim9_blue[25] = {0.0, 0.0, 0.0, 0.0, 0.0,
 
 // Quadrado Vazio (Quadrado com a borda acesa)
 uint anim9_f1[25] =  {1, 1, 1, 1, 1,
-                             1, 0, 0, 0, 1, 
-                             1, 0, 0, 0, 1,
-                             1, 0, 0, 0, 1,
-                             1, 1, 1, 1, 1};
+                      1, 0, 0, 0, 1, 
+                      1, 0, 0, 0, 1,
+                      1, 0, 0, 0, 1,
+                      1, 1, 1, 1, 1};
 
 // Círculo Vazio (Círculo com a borda acesa)
-uint anim9_f2[25] =  {0, 1, 1, 1, 0,
-                             0, 1, 0, 0, 1, 
-                             1, 0, 0, 0, 1,
-                             1, 0, 0, 0, 1,
-                             0, 1, 1, 1, 0};
+uint anim9_f2[25] ={0, 1, 1, 1, 0,
+                    1, 0, 0, 0, 1, 
+                    1, 0, 0, 0, 1,
+                    1, 0, 0, 0, 1,
+                    0, 1, 1, 1, 0};
 
 // Triângulo Vazio (Triângulo com a borda acesa)
-uint anim9_f3[25] =  {0, 0, 0, 0, 0,
-                               0, 0, 1, 0, 0, 
-                               0, 1, 0, 1, 0,
-                               1, 1, 1, 1, 1,
-                               0, 0, 0, 0, 0 };
+uint anim9_f3[25] ={0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 
+                    0, 1, 0, 1, 0,
+                    1, 1, 1, 1, 1,
+                    0, 0, 0, 0, 0 };
 
 // Retângulo (Retângulo cheio)
 uint anim9_f4[25] = {0, 0, 0, 0, 0,
-                         1, 1, 1, 1, 1, 
-                         1, 0, 0, 0, 1,
-                         1, 1, 1, 1, 1,
-                         0, 0, 0, 0, 0};
+                     1, 1, 1, 1, 1, 
+                     1, 0, 0, 0, 1,
+                     1, 1, 1, 1, 1,
+                     0, 0, 0, 0, 0};
 
 // Hexágono (Hexágono cheio)
 uint anim9_f5[25] = {0, 1, 1, 1, 0,
-                       1, 0, 0, 0, 1, 
-                       1, 0, 0, 0, 1,
-                       1, 0, 0, 0, 1,
-                       0, 1, 1, 1, 0};
+                     1, 0, 0, 0, 1, 
+                     1, 0, 0, 0, 1,
+                     1, 0, 0, 0, 1,
+                     0, 1, 1, 1, 0};
 
 // Função para executar a animação com formas geométricas
 void play_anim9(PIO pio, uint sm, uint32_t valor_led) {
+    printf("Animação 9 - Formas Geométricas.\n");
     uint *frames[] = {anim9_f1, anim9_f2, anim9_f3, anim9_f4, anim9_f5};
     double *colors_red[] = {anim9_red, anim9_red, anim9_red, anim9_red, anim9_red};
     double *colors_green[] = {anim9_green, anim9_green, anim9_green, anim9_green, anim9_green};

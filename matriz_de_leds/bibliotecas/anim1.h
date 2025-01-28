@@ -62,6 +62,7 @@ uint anim1_f5[25] = {0, 0, 0, 0, 0,
                                         
 // Rodar animação:
 void play_anim1(PIO pio,uint sm,uint32_t valor_led){
+    printf("Animação 1 - Carinha Feliz.\n");
     put_leds(anim1_f1,anim1_red,anim1_green,anim1_blue,valor_led,pio,sm);
     sleep_ms(1000);
 

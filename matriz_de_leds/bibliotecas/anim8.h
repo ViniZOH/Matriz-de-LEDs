@@ -68,6 +68,7 @@ uint lua_f7[25] =    {0, 0, 0, 0, 0,
 
 // Função para executar a animação da Lua
 void play_anim8(PIO pio, uint sm, uint32_t valor_led) {
+    printf("Animação 8 - Ciclo da Lua.\n");
     uint *frames[] = {lua_f1, lua_f2, lua_f3, lua_f4, lua_f5, lua_f6, lua_f7};
     double *colors_red[] = {anim8_red, anim8_red, anim8_red, anim8_red, anim8_red, anim8_red, anim8_red};
     double *colors_green[] = {anim8_green, anim8_green, anim8_green, anim8_green, anim8_green, anim8_green, anim8_green};

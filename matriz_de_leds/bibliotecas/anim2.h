@@ -65,6 +65,7 @@ uint anim2_f5[25] = {0, 1, 0, 1, 0,
 
 // Rodar animação:
 void play_anim2(PIO pio,uint sm,uint32_t valor_led){
+    printf("Animação 2 - heartbeat.\n");
     put_leds(anim2_f1,anim2_red,anim2_green,anim2_blue,valor_led,pio,sm);
     sleep_ms(1000);
     put_leds(anim2_f2,anim2_red,anim2_green,anim2_blue,valor_led,pio,sm);

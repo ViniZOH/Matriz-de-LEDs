@@ -65,6 +65,7 @@ void play_grito() {
 
 // Rodar animação
 void play_anim3(PIO pio,uint sm,uint32_t valor_led) {
+    printf("Animação 3 - Pac-Man Ghost.\n");
     put_leds(anim3_f1, anim3_red, anim3_green, anim3_blue, valor_led, pio, sm);
     play_bip(); // Emite bip
     sleep_ms(300); 

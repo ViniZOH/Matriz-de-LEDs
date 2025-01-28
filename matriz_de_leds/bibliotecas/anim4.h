@@ -53,6 +53,7 @@ uint anim4_f5[25] = {0, 1, 1, 1, 0,
 
 // Função para rodar a animação
 void play_anim4(PIO pio, uint sm, uint32_t valor_led) {
+    printf("Animação 4 - Tempestade.\n");
     put_leds(anim4_f1, anim4_red, anim4_green, anim4_blue, valor_led, pio, sm);
     sleep_ms(500); // Pausa de 200ms entre os frames
     put_leds(anim4_f2, anim4_red, anim4_green, anim4_blue, valor_led, pio, sm);

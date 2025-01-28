@@ -80,7 +80,7 @@ void ligar_leds_azul(PIO pio, uint sm, uint32_t valor_led) {
 //Função para ligar todos os LEDs na cor vermelho 80%
     void ligar_leds_vermelho80(PIO pio, uint sm, uint32_t valor_led){
     put_leds(all_on_frame,all_red,no_green, no_blue, valor_led, pio, sm);
-    printf("LEDs ligados na cor Vermelho 80%\n");
+    printf("LEDs ligados na cor Vermelho 80%%\n");
 }
 
 //Função para ligar todos os LEDs na cor verde 50%
