@@ -22,15 +22,6 @@ void reiniciar_microcontrolador() {
     watchdog_reboot(0, 0, 0); // Reinicia o microcontrolador
 }
 
-// Função para o modo de gravação
-void reset_usb_boot() {
-    printf("Modo de gravação ativado. Aguardando novas animações...\n");
-    // Aqui você pode adicionar a lógica para gravar novas animações
-    // Exemplo: ler uma sequência de LEDs e salvar na memória
-    sleep_ms(2000); // Simula o tempo de gravação
-    printf("Gravação concluída. Reiniciando...\n");
-    reiniciar_microcontrolador();
-}
 
 // Inicializa os pinos do teclado matricial
 void init_keyboard() {

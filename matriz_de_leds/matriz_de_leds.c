@@ -8,6 +8,7 @@ chamar a rotina que lê o teclado e montar  o switch case com as ações corresp
 #include "hardware/clocks.h"
 #include "hardware/pio.h"
 #include "hardware/adc.h"
+#include "pico/bootrom.h"
 
 //Arquivo .pio
 #include "matriz_de_leds.pio.h"
@@ -144,7 +145,8 @@ int main()
 
             case '*':
             //rotina para por placa em modo bootloader
-            reset_usb_boot();
+            printf("\nReiniciando a placa em modo de Gravação...\n");
+            reset_usb_boot(0,0);
             break;
 
             }
