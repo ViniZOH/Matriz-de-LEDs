@@ -39,7 +39,8 @@
     "files.associations": {
         "matriz_de_leds.pio.h": "c",
         "stdlib.h": "c",
-        "pio.h": "c"
+        "pio.h": "c",
+        "pitches.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
