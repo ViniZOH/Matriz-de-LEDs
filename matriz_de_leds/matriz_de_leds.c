@@ -113,7 +113,7 @@ int main()
             break;
 
             case '9':
-                //rotina para escrever na matriz de leds com o emprego de PIO - terra em volta do sol
+                //rotina para escrever na matriz de leds com o emprego de PIO - formas geometricas basicas
             play_anim9(pio,sm,valor_led);
             break;
 
@@ -142,15 +142,15 @@ int main()
             ligar_leds_branco20(pio,sm,valor_led);
             break;
 
-        //    case '*':
-                //rotina para por placa em modo bootloader
-          //  reset_usb_boot(0, 0);
+            case '*':
+            //rotina para por placa em modo bootloader
+            reset_usb_boot();
             break;
 
             }
         }
     sleep_ms(300);
-    printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));  
+   // printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));  
     }
 
     return 0;
