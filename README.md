@@ -34,7 +34,7 @@ Cada integrante da equipe foi responsável por uma funcionalidade ou animação 
 - **Tecla C:** Liga todos os LEDs na cor vermelha (80% de brilho).  
 - **Tecla D:** Liga todos os LEDs na cor verde (50% de brilho).  
 - **Tecla #:** Liga todos os LEDs na cor branca (20% de brilho).  
-- **Tecla *:** Habilita o modo de gravação via software (reboot do microcontrolador).  
+- **Tecla "*":** Habilita o modo de gravação via software (reboot do microcontrolador).  
 
 ──────────────────────────────────────────────────────────────────────  
 ## ESTRUTURA DO PROGRAMA  
@@ -106,7 +106,7 @@ Este projeto foi uma experiência incrível para explorar o potencial do Raspber
 ## VÍDEO DO PROJETO  
 ──────────────────────────────────────────────────────────────────────  
 
-[link]  
+*link:* https://youtu.be/A5Ozz3qgRho
 
 
  
