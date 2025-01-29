@@ -6,9 +6,9 @@
 
 - João Murillo Brito Taveira  
 - Amanda Cardoso Lopes  
-- Lucas Ricardo De Lima Figueiredo (Líder da semana)  
+- Lucas Ricardo De Lima Figueiredo
 - Matheus Leite Machado  
-- Vinícius Da Silva Barreto Dos Santos  
+- Vinícius Da Silva Barreto Dos Santos (Líder da semana)  
 - Wendel Souza Santos  
 
 ──────────────────────────────────────────────────────────────────────  
